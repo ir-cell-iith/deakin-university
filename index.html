@@ -111,38 +111,82 @@
     </section>
 
     <!-- About Section -->
-    <section class="section-padding" id="about">
-      <div class="container">
-        <h2 class="section-title">About the Program</h2>
-        <div class="row align-items-center">
-          <!-- Image Column -->
-          <div class="col-lg-6 pe-lg-4 mb-4 mb-lg-0">
-            <img
-              src="./images/img2.JPG"
-              alt="IITH-Deakin Collaboration"
-              class="img-fluid rounded shadow w-100"
-              style="height: 350px"
-            />
+<section class="section-padding" id="about">
+  <div class="container">
+    <h2 class="section-title">About the Program</h2>
+    <div class="row align-items-center">
+      <!-- Image Column with Carousel -->
+      <div class="col-lg-6 pe-lg-4 mb-4 mb-lg-0">
+        <div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- First Image -->
+            <div class="carousel-item active">
+              <img
+                src="./images/img2.JPG"
+                alt="IITH-Deakin Collaboration 1"
+                class="img-fluid rounded shadow w-100"
+                style="height: 350px; object-fit: cover"
+              />
+            </div>
+            <!-- Second Image -->
+            <div class="carousel-item">
+              <img
+                src="./images/img3.JPG"
+                alt="IITH-Deakin Collaboration 2"
+                class="img-fluid rounded shadow w-100"
+                style="height: 350px; object-fit: cover"
+              />
+            </div>
+            <!-- Third Image -->
+            <div class="carousel-item">
+              <img
+                src="./images/img1.JPG"
+                alt="IITH-Deakin Collaboration 3"
+                class="img-fluid rounded shadow w-100"
+                style="height: 350px; object-fit: cover"
+              />
+            </div>
           </div>
 
-          <!-- Content Column -->
-          <div class="col-lg-6 ps-lg-4">
-            <p class="lead mb-3">
-              IIT Hyderabad and Deakin University are pleased to announce the
-              opening of registrations for the jointly supervised Doctorate
-              program. Scholars will benefit from dual supervision,
-              international exposure, and world-class research facilities.
-            </p>
-            <p class="lead mb-3">
-              This unique program offers an exceptional opportunity for PhD
-              candidates to work with leading academics and researchers from
-              both institutions, gaining a truly global perspective on their
-              research.
-            </p>
-          </div>
+          <!-- Carousel Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#aboutCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#aboutCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
       </div>
-    </section>
+
+      <!-- Content Column -->
+      <div class="col-lg-6 ps-lg-4">
+        <p class="lead mb-3">
+          IIT Hyderabad and Deakin University are pleased to announce the
+          opening of registrations for the jointly supervised Doctorate
+          program. Scholars will benefit from dual supervision,
+          international exposure, and world-class research facilities.
+        </p>
+        <p class="lead mb-3">
+          This unique program offers an exceptional opportunity for PhD
+          candidates to work with leading academics and researchers from
+          both institutions, gaining a truly global perspective on their
+          research.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Program Highlights -->
     <section class="section-padding bg-light" id="highlights">
@@ -238,63 +282,98 @@
     </section>
 
     <!-- Thematic Areas -->
-    <section class="section-padding" id="themes">
-      <div class="container">
-        <h2 class="section-title">Thematic Areas</h2>
-        <div class="row">
-          <!-- Image Column -->
-          <div class="col-lg-6 pe-lg-4 mb-4 mb-lg-0">
-            <img
-              src="./images/deakin.jpg"
-              alt="IITH-Deakin Collaboration"
-              class="img-fluid rounded shadow w-100"
-              style="height: 350px; object-fit: cover"
-            />
+<section class="section-padding" id="themes">
+  <div class="container">
+    <h2 class="section-title">Thematic Areas</h2>
+    <div class="row">
+      <!-- Image Column with Carousel -->
+      <div class="col-lg-6 pe-lg-4 mb-4 mb-lg-0">
+        <div id="themesCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- First Image -->
+            <div class="carousel-item active">
+              <img
+                src="./images/deakin.jpg"
+                alt="Thematic Area 1"
+                class="img-fluid rounded shadow w-100"
+                style="height: 350px; object-fit: cover"
+              />
+            </div>
+            <!-- Second Image -->
+            <div class="carousel-item">
+              <img
+                src="./images/deakin-uni-image.jpg"
+                alt="Thematic Area 2"
+                class="img-fluid rounded shadow w-100"
+                style="height: 350px; object-fit: cover"
+              />
+            </div>
           </div>
 
-          <!-- Content Column -->
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="theme-card">
-                  <h4>
-                    <i class="fas fa-industry me-2"></i> Advanced Manufacturing
-                  </h4>
-                </div>
-                <div class="theme-card">
-                  <h4>
-                    <i class="fas fa-bolt me-2"></i> Energy & Sustainability
-                  </h4>
-                </div>
-                <div class="theme-card">
-                  <h4>
-                    <i class="fas fa-microchip me-2"></i> Critical Technology
-                  </h4>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="theme-card">
-                  <h4>
-                    <i class="fas fa-hard-hat me-2"></i> Future Infrastructure
-                  </h4>
-                </div>
-                <div class="theme-card">
-                  <h4>
-                    <i class="fas fa-heartbeat me-2"></i> Technology for Health
-                    Care
-                  </h4>
-                </div>
-                <div class="theme-card">
-                  <h4>
-                    <i class="fas fa-leaf me-2"></i> Agriculture & Environment
-                  </h4>
-                </div>
-              </div>
+          <!-- Carousel Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#themesCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#themesCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Content Column -->
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="theme-card">
+              <h4>
+                <i class="fas fa-industry me-2"></i> Advanced Manufacturing
+              </h4>
+            </div>
+            <div class="theme-card">
+              <h4>
+                <i class="fas fa-bolt me-2"></i> Energy & Sustainability
+              </h4>
+            </div>
+            <div class="theme-card">
+              <h4>
+                <i class="fas fa-microchip me-2"></i> Critical Technology
+              </h4>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="theme-card">
+              <h4>
+                <i class="fas fa-hard-hat me-2"></i> Future Infrastructure
+              </h4>
+            </div>
+            <div class="theme-card">
+              <h4>
+                <i class="fas fa-heartbeat me-2"></i> Technology for Health
+                Care
+              </h4>
+            </div>
+            <div class="theme-card">
+              <h4>
+                <i class="fas fa-leaf me-2"></i> Agriculture & Environment
+              </h4>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
     <!-- Eligibility Criteria -->
     <section class="section-padding bg-light" id="eligibility">
