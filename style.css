@@ -21,33 +21,32 @@ body {
   font-weight: 700;
   color: var(--iith-blue);
 }
- 
+
 .nav-link {
   font-weight: 500;
   margin: 0 10px;
   color: var(--dark-text) !important;
-  padding: 8px 12px;           
-  border-radius: 6px;          
-  transition: all 0.3s ease;  
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
 .nav-link:hover {
-  background-color: var(--iith-blue); 
-  color: rgb(230, 26, 26) !important;            
+  background-color: var(--iith-blue);
+  color: rgb(230, 26, 26) !important;
 }
 
-
 .hero-section {
-  min-height: 90vh;     
-  padding: 10px 0;      
+  min-height: 90vh;
+  padding: 10px 0;
 }
 
 .hero-title {
-  font-size: 2.4rem; 
+  font-size: 2.4rem;
 }
 
 .hero-subtitle {
-  font-size: 1.2rem;   
+  font-size: 1.2rem;
 }
 
 .hero-column {
@@ -55,7 +54,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 25px; 
+  gap: 25px;
 }
 
 .logo-container {
@@ -90,7 +89,7 @@ body {
 /* Mobile responsive */
 @media (max-width: 768px) {
   .hero-section {
-    min-height: 80vh; 
+    min-height: 80vh;
   }
   .hero-title {
     font-size: 2rem;
@@ -281,6 +280,60 @@ footer {
   opacity: 1;
 }
 
+/* AMRIT Page Specific Styles */
+.objective-card {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.objective-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.objective-icon {
+  margin-bottom: 1rem;
+}
+
+.research-area-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  text-align: center;
+}
+
+.research-area-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.research-icon {
+  font-size: 2.5rem;
+  color: var(--iith-blue);
+  margin-bottom: 1rem;
+}
+
+.research-area-card h4 {
+  color: var(--dark-text);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.research-area-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.nav-link .active {
+  background-color: var(--iith-blue);
+  color: var(--iith-blue) !important;
+}
+
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2rem;
@@ -288,5 +341,10 @@ footer {
 
   .hero-subtitle {
     font-size: 1.1rem;
+  }
+
+  .objective-card,
+  .research-area-card {
+    margin-bottom: 1.5rem;
   }
 }
