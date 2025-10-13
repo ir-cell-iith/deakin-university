@@ -13,18 +13,24 @@ backToTopButton.addEventListener("click", (e) => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-// Smooth scrolling for navigation links
+// Smooth scrolling for navigation links (only for internal anchors)
 document.querySelectorAll("a.nav-link").forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-
     const targetId = this.getAttribute("href");
-    const targetElement = document.querySelector(targetId);
 
-    window.scrollTo({
-      top: targetElement.offsetTop - 80,
-      behavior: "smooth",
-    });
+    // Only prevent default for internal anchor links (starting with #)
+    if (targetId && targetId.startsWith("#")) {
+      e.preventDefault();
+      const targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 80,
+          behavior: "smooth",
+        });
+      }
+    }
+    // For external links and other URLs, let the default behavior happen
   });
 });
 // Better navbar closing for Bootstrap 5
